@@ -14,6 +14,8 @@ exit;
 
 
 ++++CREAR CONTENEDOR PARA EL MICROSERVICIO DE NIVELES++++++
+crear el .jar con:
+mvn clean package
 **crear y correr level_ms:
 docker build -t level_ms .
 docker run -d -p 9000:9000 --name level_ms --link mysql-docker:mysql level_ms
