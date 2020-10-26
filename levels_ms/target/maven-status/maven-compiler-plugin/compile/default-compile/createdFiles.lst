@@ -1,0 +1,11 @@
+com\diego\userlevels\controller\ProgressControl.class
+com\diego\userlevels\repository\ClassificationRepo.class
+com\diego\userlevels\entity\Progress.class
+com\diego\userlevels\repository\ProgressRepo.class
+com\diego\userlevels\service\ProgressService.class
+com\diego\userlevels\UserLevelsApplication.class
+com\diego\userlevels\controller\ClassificationControl.class
+com\diego\userlevels\service\ClassificationService.class
+com\diego\userlevels\service\ClassificationImpl.class
+com\diego\userlevels\entity\Classification.class
+com\diego\userlevels\service\ProgressImpl.class
