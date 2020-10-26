@@ -1,0 +1,110 @@
+************************PROGRESO*************************
+Crear progreso y retornar el tipo:
+
+mutation {
+  createProgress(progress: {
+    type: "basico", 
+    name: "user",
+    advance: 46.0,
+    enable: false
+  }) {
+    type
+  }
+}
+
+
+Actualizar progreso con id: 1, y retornar su id, type y nameUser:
+
+mutation {
+  updateProgress(id: 1, progress: {
+    type: "Basico",
+    name: "A1",
+    advance: 0.0,
+    enable: false
+  }) {
+    id
+    type
+    name
+  }
+}
+
+Consultar únicamente el nameUser en los Progresos:
+
+query {
+  allProgress {
+    type
+    name
+    advance
+    enable
+  }
+}
+
+Consultar el id, type, name en un Progreso con id: 1:
+
+query {
+  progressById(id: 1) {
+    id
+    type
+    name
+    advance
+    enable
+  }
+}
+
+Eliminar un progreso con id: 1:
+
+mutation {
+  deleteProgress(id: 1)
+}
+
+
+*******************CLASIFICACION*****************************
+Crear una classificacion y retornar el nivel:
+
+mutation {
+  createClassification(classification: {
+    level: "A1", 
+    type: "Basico"
+  }) {
+    level
+    type
+  }
+}
+
+Actualizar una clasificacion con id: 1, y retornar su id, Nivel y Tipo:
+
+mutation {
+  updateClassification(id: 1, classification: {
+    level: "A1",
+    type: "Basico"
+  }) {
+    id
+    level
+    type
+  }
+}
+
+Consultar el nivel y el tipo de todas las clasificaciones:
+
+query {
+  allClassification {
+    level
+    type
+  }
+}
+
+Consultar el id, level y tipo en una clasificación con id: 1:
+
+query {
+  classificationById(id: 1) {
+    id
+    level
+    type
+  }
+}
+
+Eliminar classificación con id: 1:
+
+mutation {
+  deleteClassification(id: 1)
+}
